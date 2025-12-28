@@ -43,8 +43,8 @@ def revistas(request):
 
 def diario_de_minas(request):
     
-    # Pega todas as revistas ordenadas por ano de publicação (mais recentes primeiro)
-    revistas_list = Revistas.objects.all().order_by('-ano_publicacao')
+    # Pega todas as revistas da editora "Diário de Minas" ordenadas por ano de publicação
+    revistas_list = Revistas.objects.filter(editora__nome__icontains='Diário de Minas').order_by('-ano_publicacao')
     
     # Define quantos itens por página
     paginator = Paginator(revistas_list, 4)  # 4 revistas por página (1 linha de 4 cards)
@@ -56,12 +56,22 @@ def diario_de_minas(request):
     return render(request, 'core/revistas/diarioDeMinas.html', {'revistas': revistas})
 
 def leiteCriollo(request):
-    return render(request, 'core/revistas/leiteCriollo.html')
+    # Pega todas as revistas da editora "Leite Criollo" ordenadas por ano de publicação
+    revistas_list = Revistas.objects.filter(editora__nome__icontains='Leite Criollo').order_by('-ano_publicacao')
+    
+    # Define quantos itens por página
+    paginator = Paginator(revistas_list, 4)
+    
+    # Pega o número da página da query string
+    page = request.GET.get('page')
+    revistas = paginator.get_page(page)
+    
+    return render(request, 'core/revistas/leiteCriollo.html', {'revistas': revistas})
 
 def revistaVerde(request):
     
-    # Pega todas as revistas ordenadas por ano de publicação (mais recentes primeiro)
-    revistas_list = Revistas.objects.all().order_by('-ano_publicacao')
+    # Pega todas as revistas da editora "Verde" ordenadas por ano de publicação
+    revistas_list = Revistas.objects.filter(editora__nome__icontains='Verde').order_by('-ano_publicacao')
     
     # Define quantos itens por página
     paginator = Paginator(revistas_list, 8)  # 8 revistas por página (2 linhas de 4 cards)
@@ -73,8 +83,8 @@ def revistaVerde(request):
     return render(request, 'core/revistas/revistaVerde.html', {'revistas': revistas})
 
 def aRevista(request):
-    # Pega todas as revistas ordenadas por ano de publicação (mais recentes primeiro)
-    revistas_list = Revistas.objects.all().order_by('-ano_publicacao')
+    # Pega todas as revistas da editora "A Revista" ordenadas por ano de publicação
+    revistas_list = Revistas.objects.filter(editora__nome__iexact='A Revista').order_by('-ano_publicacao')
     
     # Define quantos itens por página
     paginator = Paginator(revistas_list, 8)
