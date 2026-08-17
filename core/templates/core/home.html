@@ -12,11 +12,11 @@
 {% block content %}
 <main class="flex-1 p-4 sm:p-6 lg:p-12 space-y-12 max-w-screen-2xl mx-auto">
 
-  <!-- Principais Notícias -->
+<!--
   <div class="w-full">
     <div class="relative overflow-hidden rounded-lg shadow-lg w-full h-[250px] sm:h-[350px] md:h-[450px]">
       <div id="carousel-container" class="flex transition-transform duration-1000 ease-in-out h-full w-full">
-        <!-- Slide 1 -->
+        Slide 1 
         <div class="carousel-slide min-w-full relative">
           <img src="{% static 'img/ufmg.webp' %}" alt="Evento cultural" class="w-full h-full object-cover" />
           <div class="absolute top-4 left-4 bg-blue-600 text-white px-2 py-1 text-sm font-semibold rounded">EVENTO</div>
@@ -25,7 +25,7 @@
             <p class="text-sm font-ptsans">Evento reuniu artistas e pesquisadores em uma programação diversificada.</p>
           </div>
         </div>
-        <!-- Slide 2 -->
+         Slide 2 
         <div class="carousel-slide min-w-full relative">
           <img src="{% static 'img/homemDeMascara.webp' %}" alt="Campus universitário" class="w-full h-full object-cover" />
           <div class="absolute top-4 left-4 bg-red-600 text-white px-2 py-1 text-sm font-semibold rounded">CAMPUS</div>
@@ -34,7 +34,7 @@
             <p class="text-sm font-ptsans">Lorem ipsum dolor sit amet, consectetur adipisicing?</p>
           </div>
         </div>
-        <!-- Slide 3 -->
+        Slide 3 
         <div class="carousel-slide min-w-full relative">
           <img src="{% static 'img/cefetmg.webp' %}" alt="Pesquisa científica" class="w-full h-full object-cover" />
           <div class="absolute top-4 left-4 bg-green-600 text-white px-2 py-1 text-sm font-semibold rounded">PESQUISA</div>
@@ -46,24 +46,49 @@
       </div>
     </div>
   </div>
-
+-->
   <!-- Introdução ao Modernismo Mineiro -->
-  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <div class="w-full">
-      <img src="{% static 'img/homemsTrabalhando.png' %}" alt="Imagem sobre modernismo mineiro"
-           class="w-full aspect-[4/3] object-cover rounded-xl border border-gray-300 dark:border-gray-700 shadow-xl" />
+  <!-- Introdução ao Modernismo Mineiro -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+  <!-- COLUNA DA ESQUERDA: as 3 imagens empilhadas -->
+  <div class="w-full space-y-6">
+
+    <div class="w-full overflow-hidden rounded-xl">
+      <img src="{% static 'img/fundoLogin.png' %}" alt="Imagem sobre modernismo mineiro"
+        class="w-full aspect-[4/3] object-cover rounded-xl border border-gray-300 dark:border-gray-700 shadow-xl" />
     </div>
-    <div>
-  <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 font-montserrat">Introdução ao Modernismo Mineiro</h2>
-  <p class="text-base text-gray-800 dark:text-gray-300 leading-relaxed font-ptsans">
-        No início no século XX, o modernismo mineiro através de influências de Mário de Andrade com sua visita a Minas Gerais em 1919 e notícias que chegavam à região mineira. Jovens estudiosos das áreas principalmente de Direito vinham para Belo Horizonte, capital mineira, em busca de um aprofundamento em seus conhecimentos e aprimoramento de suas técnicas de escritas já que aqui se situava a antiga Universidade de Minas Gerais, hoje UFMG que sempre possuiu grande prestígio entre as faculdades.<br><br>
-        É somente por volta de 1923 que o grupo começa a realmente se formar e se estabelecer como a 1ª Geração do Modernismo. Autores como João Alphonsus, Carlos Drummond, Pedro Nava e outros começaram a trabalhar no jornal Estado de Minas. Enquanto se dá essa formação e conceitualização, em Cataguases surge a revista Verde que começa a crescer as sombras do grupo da capital com autores como Enrique Resende, Ascânio Lopes, Rosário Fusco.<br><br>
-        Já em 1929 surge o grupo “Leite Criôlo”, com surgimento tardio mas ainda caracterizado como da 1ª Geração do Modernismo Mineiro, esse grupo trouxe novos focos e novas ideias para a Literatura da época. Vale mencionar autores como: João Dornas Filho, Guilhermino César, etc.
-      </p>
+
+    <div class="w-full overflow-hidden rounded-xl">
+      <img src="{% static 'img/fotoMinas.jpg' %}" alt="Imagem complementar sobre modernismo mineiro"
+        class="w-full aspect-[4/3] object-cover rounded-xl border border-gray-300 dark:border-gray-700 shadow-xl" />
+    </div>
+
+    <div class="w-full overflow-hidden rounded-xl">
+      <img src="{% static 'img/cafeEstrela.jpg' %}" alt="Imagem complementar sobre modernismo mineiro"
+        class="w-full aspect-[4/3] object-cover rounded-xl border border-gray-300 dark:border-gray-700 shadow-xl" />
+    </div>
+
+  </div> <!-- fim da coluna de imagens -->
+  <div>
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 font-montserrat">Introdução ao Modernismo Mineiro</h2>
+    <p class="text-lg text-gray-800 dark:text-gray-300 leading-relaxed font-ptsans"> No início do século XX, o Modernismo Mineiro começou a se desenvolver por meio das influências trazidas por Mário de Andrade, especialmente após sua visita a Minas Gerais em 1919, além das notícias e discussões sobre as novas correntes artísticas que chegavam à região. Jovens estudiosos, principalmente das áreas de Direito, deslocavam-se para Belo Horizonte, capital mineira, em busca de aprofundamento intelectual e aprimoramento de suas técnicas de escrita, uma vez que a cidade abrigava a antiga Universidade de Minas Gerais, atual UFMG, instituição que já possuía grande prestígio no cenário educacional brasileiro.<br><br>
+
+  É somente por volta de 1923 que o grupo modernista mineiro começa a realmente se formar e se estabelecer como representante da Primeira Geração do Modernismo. Autores como João Alphonsus, Carlos Drummond de Andrade, Pedro Nava e outros passaram a atuar no jornal Estado de Minas, utilizando o espaço para divulgar novas ideias e discutir os rumos da literatura nacional. Enquanto ocorria essa formação e conceitualização em Belo Horizonte, surgia em Cataguases a revista <i>Verde</i>, publicação que cresceu paralelamente ao grupo da capital e se tornou um dos principais símbolos do Modernismo em Minas Gerais. Entre seus colaboradores destacavam-se nomes como Enrique de Resende, Ascânio Lopes e Rosário Fusco.<br><br>
+
+  A revista <i>Verde</i> desempenhou papel fundamental na consolidação do movimento modernista mineiro. Inspirada pelos ideais da Semana de Arte Moderna de 1922, ela buscava romper com os padrões tradicionais da literatura, valorizando uma linguagem mais livre, próxima da realidade brasileira e aberta às experimentações estéticas. Por meio de seus textos, poemas e manifestos, a publicação aproximou Minas Gerais dos debates culturais que ocorriam em outras regiões do país, especialmente em São Paulo e no Rio de Janeiro.<br><br>
+
+  Já em 1929 surge o grupo “Leite Criôlo”, de aparecimento mais tardio, mas ainda caracterizado como integrante da Primeira Geração do Modernismo Mineiro. Esse grupo trouxe novos focos e perspectivas para a literatura da época, destacando questões sociais, culturais e regionais que muitas vezes não recebiam a mesma atenção dos círculos literários tradicionais. Entre seus principais representantes estavam João Dornas Filho, Guilhermino César e outros intelectuais que contribuíram para ampliar a diversidade temática do movimento.<br><br>
+
+  O Modernismo Mineiro, entretanto, não se limitou à produção literária. O movimento também influenciou áreas como o jornalismo, a crítica cultural e, posteriormente, as artes visuais. Seus participantes buscavam construir uma identidade brasileira autêntica, sem ignorar as particularidades de Minas Gerais. A valorização do cotidiano, da memória, das tradições locais e da linguagem coloquial tornou-se uma das marcas mais evidentes de seus escritores.<br><br>
+
+  Ao longo das décadas seguintes, muitos dos autores ligados ao Modernismo Mineiro alcançaram projeção nacional. Carlos Drummond de Andrade, por exemplo, tornou-se um dos maiores poetas da língua portuguesa, enquanto Pedro Nava destacou-se pela renovação das memórias literárias brasileiras. Dessa forma, o Modernismo em Minas Gerais consolidou-se como uma das vertentes mais importantes do movimento modernista brasileiro, contribuindo significativamente para a renovação cultural e literária do país e deixando um legado que permanece influente até os dias atuais.
+
+    </p>
     </div>
   </section>
 
-  <!-- Imagens em destaque -->
+  <!-- Imagens em destaque 
   <section>
     <div class="flex flex-col sm:flex-row sm:justify-between items-center mb-4 gap-2">
   <h2 class="text-xl font-bold text-center sm:text-left text-gray-900 dark:text-gray-100 font-montserrat">Imagens em destaque</h2>
@@ -77,7 +102,8 @@
           </div>
         {% else %}
           <div class="w-full aspect-[3/4] rounded-lg bg-gray-300 dark:bg-gray-600 flex items-center justify-center border border-gray-200 dark:border-gray-700">
-            <!-- Placeholder quadrado cinza -->
+-->
+            <!-- Placeholder quadrado cinza 
             <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/>
             </svg>
@@ -86,30 +112,8 @@
       {% endfor %}
     </div>
   </section>
-
-  <!-- Obras em destaque -->
-  <section>
-    <div class="flex flex-col sm:flex-row sm:justify-between items-center mb-4 mt-8 gap-2">
-  <h2 class="text-xl font-bold text-center sm:text-left text-gray-900 dark:text-gray-100 font-montserrat">Obras em destaque</h2>
-      <a href="{% url 'core:livros' %}" class="text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600 text-md">Ver Mais</a>
-    </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-      {% for item in capas %}
-        {% if item.type == 'image' %}
-          <div class="w-full aspect-[3/4] rounded-lg overflow-hidden border border-gray-300 dark:border-gray-700">
-            <img src="{{ item.src }}" alt="Capa do livro" class="w-full h-full object-cover" />
-          </div>
-        {% else %}
-          <div class="w-full aspect-[3/4] rounded-lg bg-gray-300 dark:bg-gray-600 flex items-center justify-center border border-gray-200 dark:border-gray-700">
-            <!-- Placeholder quadrado cinza -->
-            <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/>
-            </svg>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+-->
+  
 
   <!-- Linha do Tempo -->
   <h2 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100 font-montserrat">Linha do Tempo</h2>
@@ -124,12 +128,105 @@
       <div class="timeline-dot w-6 h-6 bg-blue-900 dark:bg-blue-300 rounded-full hover:scale-110 transition-transform cursor-pointer" title="2000" data-event="7"></div>
       <div class="timeline-dot w-6 h-6 bg-blue-900 dark:bg-blue-300 rounded-full hover:scale-110 transition-transform cursor-pointer" title="2022" data-event="8"></div>
     </div>
-  <div
-  id="event-card"
-  class="invisible opacity-0 absolute bg-gray-300 border border-black text-black dark:bg-gray-900 dark:text-white shadow-xl p-5 rounded-xl text-sm z-50 max-w-xs transition-all duration-300 pointer-events-none"
-></div
-
+  <div id="event-card"
+  class="invisible opacity-0 absolute bg-gray-300 border border-black text-black dark:bg-gray-900 dark:text-white shadow-xl p-5 rounded-xl text-sm z-50 max-w-xs transition-all duration-300 pointer-events-none"></div>
   </section>
+
+ <!-- Obras em destaque -->
+<section>
+  <div class="flex flex-col sm:flex-row sm:justify-between items-center mb-4 mt-8 gap-2">
+    <h2 class="text-xl font-bold text-center sm:text-left text-gray-900 dark:text-gray-100 font-montserrat">Obras em destaque</h2>
+    <a href="{% url 'core:livros' %}" class="text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600 text-md">Ver Mais</a>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    {% for item in capas %}
+      <div class="w-full aspect-[3/4] rounded-lg bg-gray-300 dark:bg-gray-600 flex items-center justify-center border border-gray-200 dark:border-gray-700">
+        <!-- Placeholder quadrado cinza -->
+        <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+  <!-- Últimas Notícias -->
+<section>
+  <div class="flex flex-col sm:flex-row sm:justify-between items-center mb-4 mt-8 gap-2">
+    <h2 class="text-xl font-bold text-center sm:text-left text-gray-900 dark:text-gray-100 font-montserrat">Últimas Notícias</h2>
+    <a href="{% url 'core:noticias' %}" class="text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600 text-md">Ver Mais</a>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Card 1 -->
+    <article class="rounded-lg overflow-hidden border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full aspect-[16/9] bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
+        <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16v14H4V5zm0 0l8 7 8-7"/>
+        </svg>
+      </div>
+      <div class="p-4">
+        <span class="text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400 font-semibold font-montserrat">Acervo</span>
+        <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mt-1 mb-2 font-montserrat leading-snug">
+          Título da notícia em destaque sobre o modernismo mineiro
+        </h3>
+        <p class="text-sm text-gray-700 dark:text-gray-400 leading-relaxed font-ptsans">
+          Breve resumo da notícia, com uma ou duas frases explicando o conteúdo da matéria para o leitor.
+        </p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-xs text-gray-500 dark:text-gray-500 font-ptsans">15 de agosto de 2026</span>
+          <a href="#" class="text-sm text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600 font-semibold">Leia mais →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="rounded-lg overflow-hidden border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full aspect-[16/9] bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
+        <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16v14H4V5zm0 0l8 7 8-7"/>
+        </svg>
+      </div>
+      <div class="p-4">
+        <span class="text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400 font-semibold font-montserrat">Eventos</span>
+        <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mt-1 mb-2 font-montserrat leading-snug">
+          Segunda notícia sobre eventos e atividades culturais recentes
+        </h3>
+        <p class="text-sm text-gray-700 dark:text-gray-400 leading-relaxed font-ptsans">
+          Breve resumo da notícia, com uma ou duas frases explicando o conteúdo da matéria para o leitor.
+        </p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-xs text-gray-500 dark:text-gray-500 font-ptsans">10 de agosto de 2026</span>
+          <a href="#" class="text-sm text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600 font-semibold">Leia mais →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="rounded-lg overflow-hidden border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full aspect-[16/9] bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
+        <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16v14H4V5zm0 0l8 7 8-7"/>
+        </svg>
+      </div>
+      <div class="p-4">
+        <span class="text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400 font-semibold font-montserrat">Pesquisa</span>
+        <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100 mt-1 mb-2 font-montserrat leading-snug">
+          Terceira notícia sobre novas pesquisas e publicações acadêmicas
+        </h3>
+        <p class="text-sm text-gray-700 dark:text-gray-400 leading-relaxed font-ptsans">
+          Breve resumo da notícia, com uma ou duas frases explicando o conteúdo da matéria para o leitor.
+        </p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-xs text-gray-500 dark:text-gray-500 font-ptsans">3 de agosto de 2026</span>
+          <a href="#" class="text-sm text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600 font-semibold">Leia mais →</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
 
   <style>
     #event-card.active {

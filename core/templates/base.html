@@ -184,8 +184,11 @@
         <div class="p-6">
           <nav class="space-y-2">
             <a href="{% url 'core:home' %}" class="nav-link active flex items-center p-3 rounded-lg"><i class="fas fa-home mr-3 w-5"></i> Inicio</a>
-            <a href="{% url 'core:autores' %}" class="nav-link flex items-center p-3 rounded-lg"><i class="fas fa-users mr-3 w-5"></i> Escritores</a>
+            <a href="{% url 'core:autores' %}" class="nav-link flex items-center p-3 rounded-lg"><i class="fas fa-users mr-3 w-5"></i> Escritores & Obras</a>
+          <!--Obras Literárias (DESATIVADA)-->
+          <!--
             <a href="{% url 'core:livros' %}" class="nav-link flex items-center p-3 rounded-lg"><i class="fas fa-book-open mr-3 w-5"></i> Obras</a>
+          -->
             <div id="revistas-menu" class="relative">
               <a id="revistas-link" class="nav-link flex items-center justify-between p-3 rounded-lg cursor-pointer">
                 <span><i class="fas fa-book-journal-whills mr-3 w-5"></i> Periódicos</span>
@@ -198,7 +201,10 @@
                 <a href="{% url 'core:aRevista' %}">"A revista"</a>
               </div>
             </div>
+            <!--Galeria(DESATIVADA)-->
+            <!--
             <a href="{% url 'core:galeria' %}" class="nav-link flex items-center p-3 rounded-lg"><i class="fas fa-images mr-3 w-5"></i> Galeria</a>
+            -->
             <a href="{% url 'core:noticias' %}" class="nav-link flex items-center p-3 rounded-lg"><i class="fas fa-newspaper mr-3 w-5"></i> Noticias</a>
             <a href="{% url 'core:sobreNos' %}" class="nav-link flex items-center p-3 rounded-lg"><i class="fas fa-info-circle mr-3 w-5"></i> Sobre Nós</a>
           </nav>
@@ -215,7 +221,7 @@
         {% endblock %}
       </main>
     </div>
-    <!-- Floating Chat Widget -->
+    <!-- Floating Chat Widget 
     <div id="chat-widget" class="chat-widget" aria-live="polite">
       <button id="chat-toggle" class="chat-button" aria-label="Abrir chat" title="Chat">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -236,6 +242,7 @@
         <button id="chat-send">Enviar</button>
       </div>
     </div>
+    -->
     <!-- Footer -->
     <footer class="bg-black text-gray-300 dark:text-gray-200 py-12 px-6">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
